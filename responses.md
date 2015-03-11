@@ -144,7 +144,7 @@
 <a name="response-macros"></a>
 ## 响应宏
 
-如果你想要自定义可以在很多路由和控制器重复使用的响应，你可以使用 `Illuminate\Contracts\Routing\ResponseFactory` 实做的方法 `macro`。
+如果你想要自定义可以在很多路由和控制器重复使用的响应，你可以使用 `Illuminate\Contracts\Routing\ResponseFactory` 实例的方法 `macro`。
 
 举个例子，来自[服务提供者的](/docs/5.0/providers) `boot` 方法:
 
@@ -170,6 +170,6 @@
 
 	}
 
-`macro` 函数第一个参数为宏名称，第二个参数为闭包函数。闭包函数会在 `ResponseFactory`的实做或者辅助方法 `response` 调用宏名称的时候被执行：
+`macro` 函数第一个参数为宏名称，第二个参数为闭包函数。闭包函数会在 `ResponseFactory`的实例或者辅助方法 `response` 调用宏名称的时候被执行：
 
 	return response()->caps('foo');
