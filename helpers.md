@@ -369,7 +369,7 @@
 
 翻译给定的语句。等同 `Lang::get`。
 
-	$value = trans('validation.required'):
+	$value = trans('validation.required');
 
 ### trans_choice
 
@@ -441,7 +441,7 @@
 
 获取一个环境变量的值，如果没有则返回一个默认值。
 
-	env('APP_ENV', 'production')
+	env('APP_ENV', 'production');
 
 ### event
 
